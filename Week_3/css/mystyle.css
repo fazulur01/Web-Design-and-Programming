@@ -1,0 +1,137 @@
+body{
+
+	font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/canberra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section {
+
+	background-color: rgba(255,244,233,0.5);
+	margin: 20px;
+	padding: 20px;
+	border-style: outset;
+	border-width: 7px;
+} 
+
+header {
+    
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+}
+ul > li {
+        font-weight: bold;
+    }
+
+#linearshadow {
+    background: linear-gradient(to right, lightgray, lightblue);
+    box-shadow: 10px 10px navy;
+    border-radius: 25px 25px 25px 25px;
+    border-style: none;
+}
+
+#s5 > p, #s6 > p {
+    margin: 10px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 18px;
+    color: navy;
+}
+
+
+.niconne {
+    font-family: 'Niconne', cursive;
+    font-size: xx-large;
+    color: navy;
+}
+
+.oxygen {
+    font-family: "Oxygen", sans-serif;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+figure {
+    height: auto;
+    width: 300px; /* Match the video width */
+    position: relative;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+figcaption {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    background-image: linear-gradient(to right, red, green, blue);
+    box-shadow: 10px 10px navy;
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 4px 3px white;
+    padding-top: 20%;
+    visibility: hidden;
+    opacity: 0.8;
+}
+    figure:hover > figcaption {
+        visibility: visible;
+    }
+
+#canberra{
+    font-size: 70px;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    -webkit-background-clip: text;
+}
+
+
+
+/*Additional Task*/
+
+.video-container {
+    position: relative;
+    width: 300px;
+    margin-left: 2.7%;
+
+}
+
+.video-container {
+    position: relative;
+    width: 300px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /*rgba(37, 69, 194, 0.41) is remove due to the look does not match the screenshot given in the tute doc*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-overlay::before {
+    content: "Big Buck Bunny"; 
+    font: bold 2vw 'Niconne';
+    color: navy;
+    text-align: center;
+    max-width: 90%;
+    white-space: nowrap;
+}
+
+.video-container:hover .video-overlay {
+    display: none;
+}
+
